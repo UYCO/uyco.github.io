@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UYCO - Home</title>
+    <link href="index.css" rel="stylesheet">
+    <script src="lib/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="index.js" defer="defer"></script>
+    <!--
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">    <link href="lib/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">    -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>    <![endif]-->
+  </head>
+  <body style="background-color: black">
+    <header class="title parralax bg_img">
+      <div class="bg_img parralax">&nbsp;</div>
+      <div class="title_content"> <img src="img/logo.png">
+        <h1>University of York Concert Orchestra </h1>
+        <hr>
+        <h3>We are a non-auditioning orchestra based at the University of York
+          that plays two concerts a year featuring a wide range of popular
+          classical music. </h3>
+      </div>
+    </header>
+  </body>
+</html>
