@@ -1,15 +1,100 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 @import url('https://fonts.googleapis.com/css?family=Raleway:300');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
 
 header{
     width: 100%;
+    /*background:url("img/home_bg.jpg") fixed;*/
+    height: 100%;
+    background-size: cover;
+    color: white;
 }
 
-.title_content{
+nav{
+    position: fixed;
+    width: 100%;
+    color: white;
+    /* transition: background-color 0.1s; */
+    background: linear-gradient(to bottom, #333 0%,rgba(51, 51, 51, 0) 100%);
+}
+button{
+    font-size: 100%;
+    padding: 0.5em 1em;
+    color: rgba(0, 0, 0, 0.80);
+    border: none;
+    background-color: #E6E6E6;
+    text-decoration: none;
+    border-radius: 2px;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+}
+
+button:hover{
+    color: white;
+    background-color: #000;
+}
+
+.nav-container{
+    padding: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: initial;
+}
+
+.nav-logo{display: inline-block;}
+
+.nav-logo img{
+    width: 50px;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.nav-menu {
+    float: right;
+    padding-top: 7px;
+}
+
+.nav-menu a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.text-block{
+    padding: 20px;
+    padding-left:60px;
+    padding-right:60px;
+    max-width:500px;
+    text-align: center;
+}
+
+.text-block * {
+    text-align: left;
+}
+
+.title{
     width: 100%;
     padding-top: 70px;
     padding-bottom: 50px;
     text-align:center;
+}
+
+.parralax-container{
+    position: relative;
+}
+
+footer{
+    /* font-family: 'Oswald', sans-serif; */
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+    /* font-family: 'Railway'; */
+}
+
+.footer-main{
+    font-family: 'Oswald', sans-serif;
 }
 
 .parralax{
@@ -17,25 +102,22 @@ header{
     transition-property: background-position;
 }
 
-.bg_img{
-    background:url("img/home_bg_color.jpg") fixed;
-    filter: grayscale(1) brightness(0.6);
+.cover-img{
     width: 100%;
     height: 100%;
-    position: absolute;
+    background-attachment: fixed;
     background-size: cover;
-    z-index: -1;
 }
 
 h1{
-    font-size: 74px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 72px;
     max-width: 500px;
     margin: 0 auto;
     line-height: 96.2px;
 }
 
 h3{
-    font-family: 'Raleway', sans-serif;
     font-weight:normal;
     font-size: 16px;
     margin: 0 auto;
@@ -50,7 +132,13 @@ hr{
 
 body{
     margin: 0px;
-    min-height:3000px;
-    font-family: 'Oswald', sans-serif;
-    color: white;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    font-family: 'Raleway', sans-serif
 }
