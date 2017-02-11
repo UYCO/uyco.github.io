@@ -18,9 +18,12 @@ nav{
     position: fixed;
     width: 100%;
     color: white;
+    z-index: 10;
 }
 
-.nav-logo{display: inline-block;}
+.nav-logo{
+    display: inline-block;
+}
 
 .nav-logo img{
     width: 50px;
@@ -46,11 +49,23 @@ nav{
     background-color: initial;
 }
 
+@media screen and (max-width: 515px){
+    .nav-logo span{
+        display: none;
+    }
+    
+    .nav-menu{
+        float: none;
+        display: inline-block;
+    }
+}
+
 .cover-img{
     width: 100%;
     height: 100%;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 1600px 1068px;
+    background-position-x: center;
 }
 
 /* GENERAL CLASSES */
@@ -107,7 +122,7 @@ h3{
     font-weight:normal;
     font-size: 16px;
     margin: 0 auto;
-    width: 650px;
+    max-width: 650px;
 }
 
 hr{
